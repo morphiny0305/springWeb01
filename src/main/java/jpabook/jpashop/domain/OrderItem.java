@@ -20,7 +20,7 @@ public class OrderItem {
     @JoinColumn(name = "item_id")
     private Item item; /** 주문상품 **/
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = LAZY)
     @JoinColumn(name = "order_id") /** 하나의 오더가 여러개의 오더 아이템을 가질 수 있으므로 **/
     private Order order; /** 주문 **/
 
